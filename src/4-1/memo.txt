@@ -1,0 +1,55 @@
+① 配列変数の宣言
+
+　int[] scores;
+
+
+int[] data;
+double[] data2;
+boolean[] data3;
+String[] data4;
+
+int[] scores;
+double[] scores;
+
+② 配列変数の作成（要素の作成）
+
+scores = new int[5];
+
+③配列変数名
+
+int num = scores.length;
+配列は 連続したメモリ領域として確保される
+
+④配列の要素
+　０から始まる
+　scores[1] = 30;
+
+⑤ 配列の初期化
+ 要素が初期化される値は、要素の型によって決まる
+
+ int[] scores = new int[5]　数値の方の場合
+
+index:   0    1    2    3    4
+value:   0    0    0    0    0
+
+
+
+⑤省略記法
+
+　⚪️ 配列の「作成」と「要素の代入」をまとめて1行で書く書き方
+
+int[] scores = new int[5];
+scores[0] = 20;
+scores[1] = 30;
+scores[2] = 40;
+scores[3] = 50;
+scores[4] = 80;
+
+int[] scores = {20, 30, 40, 50, 80};
+
+① 宣言と同時でしか使えない
+② 型はすべて同じでなければならない
+int[] scores;
+scores = {20, 30, 40, 50, 80};
+
+int[] scores = {20, 30, 40, 50, 80};
