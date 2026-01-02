@@ -1,0 +1,10 @@
+　① ArrayIndexOutOfBoundsException
+
+配列で一番多い・必ず出る
+
+意味
+👉 存在しない添字（インデックス）を指定した
+
+int[] scores = {10, 20, 30};
+
+System.out.println(scores[3]); // 例外
