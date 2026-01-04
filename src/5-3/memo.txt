@@ -1,0 +1,33 @@
+戻り値とは、
+
+呼び出されたメソッドが、
+計算や処理の結果として
+呼び出し元に返す「値」
+
+その変数名に「今入っている値」を返す
+
+戻り値の受け取り方（基本）
+
+型 変数名 = メソッド呼び出し();
+
+例（int を返す場合）
+
+public static int add(int x, int y) {
+    return x + y;
+}
+
+※型は必ず一致させる
+
+
+① return 以降の処理は実行されない
+
+public static int test() {
+    System.out.println("A");
+    return 10;
+    // ↓ ここは実行されない
+    // System.out.println("B");
+}
+
+結論
+
+👉 多くの場合、return はメソッドの最後に書く
